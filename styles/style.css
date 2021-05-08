@@ -10,13 +10,20 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: #ecf0f3;
-  color: #555;
+  color: #cecccc;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: 700;
+  color: black;
+}
+
+p,
+span,
+option {
+  color: black;
+  font-style: italic;
 }
 
 i,
@@ -25,7 +32,7 @@ svg {
 }
 
 button {
-  background: #bfbfbf;
+  background: #dde1ef;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
@@ -47,36 +54,43 @@ button {
 .kick-pad {
   background: #ffaf00;
   background: linear-gradient(229deg, rgba(255, 175, 0, 0.4) 7%, rgba(207, 27, 76, 0.4) 51%, rgba(196, 34, 173, 0.4) 79%, rgba(147, 40, 163, 0.4) 100%);
+  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .snare-pad {
   background: #22c1c3;
   background: linear-gradient(0deg, rgba(34, 193, 195, 0.5) 0%, rgba(253, 187, 45, 0.5) 100%);
+  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .hihat-pad {
   background: #47fa89;
   background: linear-gradient(90deg, rgba(71, 250, 137, 0.5) 0%, rgba(29, 122, 212, 0.5) 100%);
+  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .clap-pad {
   background: #b947fa;
   background: linear-gradient(212deg, rgba(185, 71, 250, 0.5) 0%, rgba(160, 99, 229, 0.5) 35%, rgba(105, 93, 214, 0.5) 59%, rgba(29, 122, 212, 0.5) 100%);
+  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .tom-pad {
   background: #47fae0;
   background: linear-gradient(212deg, rgba(71, 250, 224, 0.5) 0%, rgba(229, 169, 99, 0.5) 50%, rgba(229, 169, 99, 0.5) 56%, rgba(29, 212, 148, 0.5) 100%);
+  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .shaker-pad {
   background: #fa9847;
   background: linear-gradient(212deg, rgba(250, 152, 71, 0.5) 0%, rgba(229, 169, 99, 0.5) 50%, rgba(229, 169, 99, 0.5) 56%, rgba(72, 29, 212, 0.5) 100%);
+  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .perc-pad {
   background: #fa4747;
   background: linear-gradient(212deg, rgba(250, 71, 71, 0.5) 0%, rgba(99, 152, 229, 0.5) 50%, rgba(99, 229, 131, 0.5) 56%, rgba(29, 212, 158, 0.5) 100%);
+  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .sequence {
@@ -85,6 +99,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #dde1e7;
 }
 
 .kick-track,
@@ -100,6 +115,7 @@ button {
   flex-direction: row;
   width: 70%;
   margin-top: 3rem;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .kick,
@@ -125,11 +141,21 @@ button {
 
 .controls button {
   padding: 1rem;
-  background: rgba(88, 88, 88, 0.5);
-  color: white;
+  color: #129b39;
   cursor: pointer;
   transition: all 0.5s ease;
   font-size: 1rem;
+}
+
+.controls button,
+.controls select {
+  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.controls select {
+  background: #dde1e7;
+  border-radius: 1.5rem;
+  text-align: center;
 }
 
 select {
@@ -151,6 +177,8 @@ select {
   padding: 1rem 2rem;
   font-size: 1.5rem;
   margin-top: 5rem;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  color: #129b39;
 }
 
 select {
@@ -175,9 +203,10 @@ select {
   -webkit-appearance: none;
   margin: 1rem 0rem;
   width: 100%;
-  background: #bfbfbf;
+  background: #dde1e7;
   cursor: pointer;
   border-radius: 1rem;
+  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .tempo p {
@@ -188,42 +217,49 @@ select {
 
 .controls button,
 .pad {
-  transition: all 0.5 ease;
+  transition: all 0.5s ease;
 }
 
 .kick-pad.active {
   background: #ffaf00;
   background: linear-gradient(229deg, #ffaf00 7%, #cf1b4c 51%, #c422ad 79%, #9328a3 100%);
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .snare-pad.active {
   background: #22c1c3;
   background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .hihat-pad.active {
   background: #47fa89;
   background: linear-gradient(90deg, #47fa89 0%, #1d7ad4 100%);
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .clap-pad.active {
   background: #b947fa;
   background: linear-gradient(212deg, #b947fa 0%, #a063e5 35%, #695dd6 59%, #1d7ad4 100%);
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .tom-pad.active {
   background: #47fae0;
   background: linear-gradient(212deg, #47fae0 0%, #e5a963 50%, #e5a963 56%, #1dd494 100%);
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .shaker-pad.active {
   background: #fa9847;
   background: linear-gradient(212deg, #fa9847 0%, #e5a963 50%, #e5a963 56%, #481dd4 100%);
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .perc-pad.active {
   background: #fa4747;
   background: linear-gradient(212deg, #fa4747 0%, #6398e5 50%, #63e583 56%, #1dd49e 100%);
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .mute.active {

@@ -10,13 +10,19 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: #ecf0f3;
-  color: #555;
+  color: rgb(206, 204, 204);
 }
 
 h1 {
   font-size: 2rem;
   font-weight: 700;
+  color: black;
+}
+p,
+span,
+option {
+  color: black;
+  font-style: italic;
 }
 
 i,
@@ -25,7 +31,7 @@ svg {
 }
 
 button {
-  background: #bfbfbf;
+  background: #dde1ef;
   border-radius: 1rem;
   border: none;
   cursor: pointer;

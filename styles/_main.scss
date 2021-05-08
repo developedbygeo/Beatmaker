@@ -20,6 +20,8 @@
     rgba(196, 34, 173, 0.4) 79%,
     rgba(147, 40, 163, 0.4) 100%
   );
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .snare-pad {
@@ -29,6 +31,8 @@
     rgba(34, 193, 195, 0.5) 0%,
     rgba(253, 187, 45, 0.5) 100%
   );
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .hihat-pad {
@@ -38,6 +42,8 @@
     rgba(71, 250, 137, 0.5) 0%,
     rgba(29, 122, 212, 0.5) 100%
   );
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .clap-pad {
@@ -49,6 +55,8 @@
     rgba(105, 93, 214, 0.5) 59%,
     rgba(29, 122, 212, 0.5) 100%
   );
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .tom-pad {
@@ -60,6 +68,8 @@
     rgba(229, 169, 99, 0.5) 56%,
     rgba(29, 212, 148, 0.5) 100%
   );
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 .shaker-pad {
   background: rgb(250, 152, 71);
@@ -70,6 +80,8 @@
     rgba(229, 169, 99, 0.5) 56%,
     rgba(72, 29, 212, 0.5) 100%
   );
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 .perc-pad {
   background: rgb(250, 71, 71);
@@ -80,11 +92,14 @@
     rgba(99, 229, 131, 0.5) 56%,
     rgba(29, 212, 158, 0.5) 100%
   );
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .sequence {
   min-height: 100vh;
   @include flex(center, column);
+  background-color: #dde1e7;
 }
 
 .kick-track,
@@ -97,6 +112,7 @@
   @include flex(center, row);
   width: 70%;
   margin-top: 3rem;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .kick,
@@ -117,12 +133,23 @@
   margin: 0rem 2rem;
   button {
     padding: 1rem;
-    background: rgba(88, 88, 88, 0.5);
-    color: white;
+    color: #129b39;
     cursor: pointer;
     transition: all 0.5s ease;
     font-size: 1rem;
   }
+}
+
+.controls button,
+.controls select {
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.controls select {
+  background: #dde1e7;
+  border-radius: 1.5rem;
+  text-align: center;
 }
 
 select {
@@ -141,6 +168,8 @@ select {
   padding: 1rem 2rem;
   font-size: 1.5rem;
   margin-top: 5rem;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  color: #129b39;
 }
 
 select {
@@ -163,9 +192,11 @@ select {
     -webkit-appearance: none;
     margin: 1rem 0rem;
     width: 100%;
-    background: #bfbfbf;
+    background: #dde1e7;
     cursor: pointer;
     border-radius: 1rem;
+    box-shadow: inset -3px -3px 7px #ffffff73,
+      inset 3px 3px 5px rgba(94, 104, 121, 0.288);
   }
   p {
     font-size: 1.5rem;

@@ -87,10 +87,13 @@ class DrumKit {
   }
   updateBtn() {
     if (!this.isPlaying) {
-      this.playBtn.innerText = "Stop";
+      this.playBtn.innerHTML = `<i class="fas fa-stop"></i>`;
+      this.playBtn.style.color = "#9f281d";
+
       this.playBtn.classList.add("active");
     } else {
-      this.playBtn.innerText = "Play";
+      this.playBtn.innerHTML = `<i class="fas fa-play"></i>`;
+      this.playBtn.style.color = "#129b39";
       this.playBtn.classList.remove("active");
     }
   }
@@ -125,6 +128,9 @@ class DrumKit {
     const muteFunc = e.target.getAttribute("data-track");
     e.target.classList.toggle("active");
     if (e.target.classList.contains("active")) {
+      e.target.innerHTML = `<i class="fas fa-volume-mute"></i>`;
+      e.target.style.color = "#9f281d";
+
       switch (muteFunc) {
         case "0":
           this.kickAudio.volume = 0;
@@ -149,6 +155,8 @@ class DrumKit {
           break;
       }
     } else {
+      e.target.innerHTML = `<i class="fas fa-music"></i>`;
+      e.target.style.color = "#129b39";
       switch (muteFunc) {
         case "0":
           this.kickAudio.volume = 1;

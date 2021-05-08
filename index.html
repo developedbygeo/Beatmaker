@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css" />
     <link
       rel="stylesheet"
@@ -26,7 +28,7 @@
       </div>
         <div class="controls">
           <button data-track="0" class="mute kick-vol">
-            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-music"></i>
           </button>
           <select name="kick-select" id="kick-select">
             <option value="./allSounds/Drums/kick-classic.wav">Classic</option>
@@ -57,7 +59,7 @@
       </div>
         <div class="controls">
           <button data-track="1" class="mute snare-vol">
-            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-music"></i>
           </button>
           <select name="snare-select" id="snare-select">
             <option value="./allSounds/Drums/snare-acoustic01.wav">
@@ -90,7 +92,7 @@
       </div>
         <div class="controls">
           <button data-track="2" class="mute hihat-vol">
-            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-music"></i>
           </button>
           <select name="hihat-select" id="hihat-select">
             <option value="./allSounds/Drums/hihat-acoustic02.wav">
@@ -125,7 +127,7 @@
       </div>
         <div class="controls">
           <button data-track="3" class="mute clap-vol">
-            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-music"></i>
           </button>
           <select name="clap-select" id="clap-select">
             <option value="./allSounds/Drums/clap-tape.wav">Classic</option>
@@ -154,7 +156,7 @@
       </div>
         <div class="controls">
           <button data-track="4" class="mute tom-vol">
-            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-music"></i>
           </button>
           <select name="tom-select" id="tom-select">
             <option value="./allSounds/Drums/tom-acoustic01.wav">
@@ -187,7 +189,7 @@
       </div>
         <div class="controls">
           <button data-track="5" class="mute shaker-vol">
-            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-music"></i>
           </button>
           <select name="shaker-select" id="shaker-select">
             <option value="./allSounds/Drums/shaker-analog.wav">
@@ -225,7 +227,7 @@
       </div>
         <div class="controls">
           <button data-track="6" class="mute perc-vol">
-            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-music"></i>
           </button>
           <select name="perc-select" id="perc-select">
             <option value="../allSounds/Drums/perc-short.mp3">
@@ -271,7 +273,9 @@
           <div class="pad perc-pad b9"></div>
         </div>
       </div>
-      <button class="play">Play</button>
+      <button class="play">
+        <i class="fas fa-play"></i>
+            </button>
       <div class="tempo">
         <input type="range" class="tempo-slider" max="350" min="120" value="150">
         <p>Tempo: <span class="tempo-nr">150</span></p>
