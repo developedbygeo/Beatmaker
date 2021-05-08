@@ -10,14 +10,12 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
-  width: 100vw;
   background: #ecf0f3;
   color: #555;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -40,8 +38,8 @@ button {
 .tom-pad,
 .shaker-pad,
 .perc-pad {
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 4rem;
   margin: 1rem 0.5rem;
   cursor: pointer;
 }
@@ -98,10 +96,10 @@ button {
 .perc-track {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   width: 70%;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .kick,
@@ -112,37 +110,45 @@ button {
 .shaker,
 .perc {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .controls {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
   flex: 1;
   margin: 0rem 2rem;
 }
 
 .controls button {
-  padding: 1rem 1.5rem;
+  padding: 1rem;
+  background: rgba(88, 88, 88, 0.5);
+  color: white;
   cursor: pointer;
   transition: all 0.5s ease;
   font-size: 1rem;
 }
 
-.snare-vol {
-  margin-left: 1.6%;
+select {
+  flex: 0 1 10rem;
 }
 
-.kick-vol {
-  margin-left: 4%;
+.ctrl-header {
+  flex: 1;
+}
+
+.ctrl-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .play {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   font-size: 1.5rem;
   margin-top: 5rem;
 }
@@ -153,6 +159,10 @@ select {
   margin: 1rem;
   width: 10%;
   text-align: center;
+}
+
+.pad {
+  transition: all 0.5s ease;
 }
 
 .tempo {

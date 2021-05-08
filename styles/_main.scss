@@ -5,8 +5,8 @@
 .tom-pad,
 .shaker-pad,
 .perc-pad {
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 4rem;
   margin: 1rem 0.5rem;
   cursor: pointer;
 }
@@ -94,9 +94,9 @@
 .tom-track,
 .shaker-track,
 .perc-track {
-  @include flex(space-between, row);
+  @include flex(center, row);
   width: 70%;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .kick,
@@ -106,33 +106,39 @@
 .tom,
 .shaker,
 .perc {
-  @include flex(center, row);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .controls {
-  @include flex(space-between, row);
+  @include flex(space-around, row);
+  flex-wrap: wrap;
   flex: 1;
   margin: 0rem 2rem;
+  button {
+    padding: 1rem;
+    background: rgba(88, 88, 88, 0.5);
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+  }
 }
 
-.controls button {
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  font-size: 1rem;
+select {
+  flex: 0 1 10rem;
 }
 
-// Aligning Mute Buttons
-
-.snare-vol {
-  margin-left: 1.6%;
+.ctrl-header {
+  flex: 1;
 }
-.kick-vol {
-  margin-left: 4%;
+
+.ctrl-header {
+  @include flex(center, row);
 }
 
 .play {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   font-size: 1.5rem;
   margin-top: 5rem;
 }
@@ -143,6 +149,10 @@ select {
   margin: 1rem;
   width: 10%;
   text-align: center;
+}
+
+.pad {
+  transition: all 0.5s ease;
 }
 
 .tempo {
