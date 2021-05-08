@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background: #ecf0f3;
+  color: #555;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+button {
+  background: #bfbfbf;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad,
+.clap-pad,
+.tom-pad,
+.shaker-pad,
+.perc-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: #ffaf00;
+  background: linear-gradient(229deg, rgba(255, 175, 0, 0.4) 7%, rgba(207, 27, 76, 0.4) 51%, rgba(196, 34, 173, 0.4) 79%, rgba(147, 40, 163, 0.4) 100%);
+}
+
+.snare-pad {
+  background: #22c1c3;
+  background: linear-gradient(0deg, rgba(34, 193, 195, 0.5) 0%, rgba(253, 187, 45, 0.5) 100%);
+}
+
+.hihat-pad {
+  background: #47fa89;
+  background: linear-gradient(90deg, rgba(71, 250, 137, 0.5) 0%, rgba(29, 122, 212, 0.5) 100%);
+}
+
+.clap-pad {
+  background: #b947fa;
+  background: linear-gradient(212deg, rgba(185, 71, 250, 0.5) 0%, rgba(160, 99, 229, 0.5) 35%, rgba(105, 93, 214, 0.5) 59%, rgba(29, 122, 212, 0.5) 100%);
+}
+
+.tom-pad {
+  background: #47fae0;
+  background: linear-gradient(212deg, rgba(71, 250, 224, 0.5) 0%, rgba(229, 169, 99, 0.5) 50%, rgba(229, 169, 99, 0.5) 56%, rgba(29, 212, 148, 0.5) 100%);
+}
+
+.shaker-pad {
+  background: #fa9847;
+  background: linear-gradient(212deg, rgba(250, 152, 71, 0.5) 0%, rgba(229, 169, 99, 0.5) 50%, rgba(229, 169, 99, 0.5) 56%, rgba(72, 29, 212, 0.5) 100%);
+}
+
+.perc-pad {
+  background: #fa4747;
+  background: linear-gradient(212deg, rgba(250, 71, 71, 0.5) 0%, rgba(99, 152, 229, 0.5) 50%, rgba(99, 229, 131, 0.5) 56%, rgba(29, 212, 158, 0.5) 100%);
+}
+
+.sequence {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.kick-track,
+.snare-track,
+.hihat-track,
+.clap-track,
+.tom-track,
+.shaker-track,
+.perc-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 70%;
+  margin-top: 5rem;
+}
+
+.kick,
+.snare,
+.hihat,
+.clap,
+.tom,
+.shaker,
+.perc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex: 1;
+  margin: 0rem 2rem;
+}
+
+.controls button {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-size: 1rem;
+}
+
+.snare-vol {
+  margin-left: 1.6%;
+}
+
+.kick-vol {
+  margin-left: 4%;
+}
+
+.play {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 1rem;
+  width: 10%;
+  text-align: center;
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo input {
+  padding: 0.3rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  background: #bfbfbf;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.tempo p {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.controls button,
+.pad {
+  transition: all 0.5 ease;
+}
+
+.kick-pad.active {
+  background: #ffaf00;
+  background: linear-gradient(229deg, #ffaf00 7%, #cf1b4c 51%, #c422ad 79%, #9328a3 100%);
+}
+
+.snare-pad.active {
+  background: #22c1c3;
+  background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
+}
+
+.hihat-pad.active {
+  background: #47fa89;
+  background: linear-gradient(90deg, #47fa89 0%, #1d7ad4 100%);
+}
+
+.clap-pad.active {
+  background: #b947fa;
+  background: linear-gradient(212deg, #b947fa 0%, #a063e5 35%, #695dd6 59%, #1d7ad4 100%);
+}
+
+.tom-pad.active {
+  background: #47fae0;
+  background: linear-gradient(212deg, #47fae0 0%, #e5a963 50%, #e5a963 56%, #1dd494 100%);
+}
+
+.shaker-pad.active {
+  background: #fa9847;
+  background: linear-gradient(212deg, #fa9847 0%, #e5a963 50%, #e5a963 56%, #481dd4 100%);
+}
+
+.perc-pad.active {
+  background: #fa4747;
+  background: linear-gradient(212deg, #fa4747 0%, #6398e5 50%, #63e583 56%, #1dd49e 100%);
+}
+
+.mute.active {
+  background: #e6e6e6;
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+/*# sourceMappingURL=style.css.map */

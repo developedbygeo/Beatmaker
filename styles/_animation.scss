@@ -1,0 +1,88 @@
+.controls button,
+.pad {
+  transition: all 0.5 ease;
+}
+
+.kick-pad.active {
+  background: rgb(255, 175, 0);
+  background: linear-gradient(
+    229deg,
+    rgba(255, 175, 0, 1) 7%,
+    rgba(207, 27, 76, 1) 51%,
+    rgba(196, 34, 173, 1) 79%,
+    rgba(147, 40, 163, 1) 100%
+  );
+}
+
+.snare-pad.active {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+.hihat-pad.active {
+  background: rgb(71, 250, 137);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 250, 137, 1) 0%,
+    rgba(29, 122, 212, 1) 100%
+  );
+}
+
+.clap-pad.active {
+  background: rgb(185, 71, 250);
+  background: linear-gradient(
+    212deg,
+    rgba(185, 71, 250, 1) 0%,
+    rgba(160, 99, 229, 1) 35%,
+    rgba(105, 93, 214, 1) 59%,
+    rgba(29, 122, 212, 1) 100%
+  );
+}
+
+.tom-pad.active {
+  background: rgb(71, 250, 224);
+  background: linear-gradient(
+    212deg,
+    rgba(71, 250, 224, 1) 0%,
+    rgba(229, 169, 99, 1) 50%,
+    rgba(229, 169, 99, 1) 56%,
+    rgba(29, 212, 148, 1) 100%
+  );
+}
+.shaker-pad.active {
+  background: rgb(250, 152, 71);
+  background: linear-gradient(
+    212deg,
+    rgba(250, 152, 71, 1) 0%,
+    rgba(229, 169, 99, 1) 50%,
+    rgba(229, 169, 99, 1) 56%,
+    rgba(72, 29, 212, 1) 100%
+  );
+}
+.perc-pad.active {
+  background: rgb(250, 71, 71);
+  background: linear-gradient(
+    212deg,
+    rgba(250, 71, 71, 1) 0%,
+    rgba(99, 152, 229, 1) 50%,
+    rgba(99, 229, 131, 1) 56%,
+    rgba(29, 212, 158, 1) 100%
+  );
+}
+
+.mute.active {
+  background: #e6e6e6;
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
