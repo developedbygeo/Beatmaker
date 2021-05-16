@@ -8,7 +8,7 @@
   .perc-track {
     width: 100%;
     margin-top: 0;
-    @include flex(center, column);
+    @include flex(center, row);
   }
 
   .kick,
@@ -18,11 +18,11 @@
   .tom,
   .shaker,
   .perc {
-    flex: 2 1 5rem;
+    flex: 1 1 5rem;
     align-items: center;
     justify-content: center;
     .pad {
-      flex: 1 1 4rem;
+      flex: 1 1 3rem;
     }
   }
 
@@ -77,10 +77,16 @@
   .perc-track {
     width: 100%;
     margin-top: 0;
-    @include flex(center, row);
+    @include flex(center, column);
   }
   select {
     flex: 1 1 50rem;
+  }
+  .ctrl-header {
+    flex: 1 1 2rem;
+    h1 {
+      margin-top: 0.1rem;
+    }
   }
   .kick,
   .snare,
@@ -89,7 +95,10 @@
   .tom,
   .shaker,
   .perc {
-    flex: 2 1 30rem;
+    flex: 2 1 5rem;
+  }
+  .pad {
+    flex: 1 1 3rem;
   }
   .play {
     margin-top: 2rem;
@@ -101,7 +110,7 @@
   }
 
   .controls {
-    width: 100%;
+    width: 90%;
   }
 
   select {
@@ -111,5 +120,41 @@
   .mute {
     width: 100%;
     margin-bottom: 1rem;
+  }
+  .play {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 241px) {
+  .kick .pad,
+  .snare .pad,
+  .hihat .pad,
+  .clap .pad,
+  .tom .pad,
+  .shaker .pad,
+  .perc .pad {
+    flex: 1 1 1rem;
+    height: 50%;
+  }
+  .controls {
+    width: 90%;
+    button {
+      padding: 0.5rem;
+    }
+    select {
+      padding: 0.5rem;
+    }
+  }
+  .play {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .controls {
+    width: 90%;
+  }
+  .play {
+    width: 90%;
   }
 }
