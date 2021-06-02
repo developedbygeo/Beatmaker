@@ -15,7 +15,7 @@ Beatmaker is a straight-forward project, which was created for learning purposes
 
 ## Tech
 
-Two work properly, the Beatmaker uses the following:
+To work properly, the Beatmaker uses the following:
 
 - JavaScript
 - 99Sounds.org samples
